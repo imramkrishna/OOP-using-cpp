@@ -10,6 +10,9 @@ public:
     Time(int Hr, int Min, int Sec) : Hour(Hr), Minute(Min), Second(Sec)
     {
     }
+    ~Time(){
+        cout<<"Destructor called"<<endl;
+    }
 };
 Time Add(Time t1, Time t2)
 {
